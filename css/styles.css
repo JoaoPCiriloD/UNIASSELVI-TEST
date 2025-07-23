@@ -194,6 +194,26 @@ a.skip-to-content:focus {
     align-items: center;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.foco-educacional {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.foco-educacional:hover {
+    opacity: 1;
+}
+
 .go-top,
 .acessibilidade {
     position: fixed;
@@ -2403,6 +2423,12 @@ span.passado {
     /* ! */
     /* ! page home - index.html */
     /* ! */
+    
+    /* Ocultar texto "Foco Educacional" em dispositivos móveis */
+    .foco-educacional {
+        display: none;
+    }
+    
     .h1-home .line-1,
     .h1-home .line-2 {
         border-radius: 10px;
