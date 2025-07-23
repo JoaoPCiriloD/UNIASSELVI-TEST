@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ? css pre-connects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://use.typekit.net" />
+    <!-- ? -->
+
+    <!-- analytics aqui -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-MP748JT");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- meta tags aqui -->
+    <!-- Primary Meta Tags -->
+    <title>Bem-vindo à UNIASSELVI</title>
+    <meta name="title" content="Bem-vindo à UNIASSELVI" />
+    <meta name="description"
+        content="Conheça a nossa instituição e nosso modelo de ensino! Saiba mais sobre o UNIASSELVI Leo App e seu Ambiente de Aprendizagem clicando aqui." />
+    <meta name="theme-color" content="#1d1d1b" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://conteudos.uniasselvi.com.br/ead_uniasselvi/" />
+    <meta property="og:title" content="Bem-vindo à UNIASSELVI" />
+    <meta property="og:description"
+        content="Conheça a nossa instituição e nosso modelo de ensino! Saiba mais sobre o UNIASSELVI Leo App e seu Ambiente de Aprendizagem clicando aqui." />
+    <meta property="og:image" content="https://conteudos.uniasselvi.com.br/ead_uniasselvi/img/thumb.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://conteudos.uniasselvi.com.br/ead_uniasselvi/" />
+    <meta property="twitter:title" content="Bem-vindo à UNIASSELVI" />
+    <meta property="twitter:description"
+        content="Conheça a nossa instituição e nosso modelo de ensino! Saiba mais sobre o UNIASSELVI Leo App e seu Ambiente de Aprendizagem clicando aqui." />
+    <meta property="twitter:image" content="https://conteudos.uniasselvi.com.br/ead_uniasselvi/img/thumb.png" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+
+    <!-- files -->
+    <link rel="stylesheet" href="https://use.typekit.net/tdl4wcy.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/lazysizes.min.js" async></script>
+    <script src="../js/progressbar.min.js" async></script>
+    <script src="../js/index.js" async></script>
+</head>
+
+<body>
+    <a href="#content" class="skip-to-content">Pular para o conteúdo ⤵</a>
+
+    <nav class="main-nav">
+        <div class="wrapper">
+            <a class="a-portal" href="./index.html" target="_blank" rel="noopener"><img class="lazyload"
+                    src="https://conteudos.uniasselvi.com.br/tecnico/img/logo_branco.svg" alt="" /></a>
+
+            <button class="hidden-on-desktop" onclick="toggleMenu()">
+                <i class="material-icons">menu</i>
+            </button>
+
+            <ul>
+                <li class="borderLeftRight active menu-inicio">
+                    <a href="index.html">Início<i class="material-icons mini">expand_more</i></a>
+                    <ul>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="acesso" onclick="redirectEtapas(this)">Como acessar</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="passos" onclick="redirectEtapas(this)">Primeiros passos</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="trilha" onclick="redirectEtapas(this)">Trilha de aprendizagem</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="teams" onclick="redirectEtapas(this)">Utilizando a plataforma Teams</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="agendamento" onclick="redirectEtapas(this)">Como agendar avaliações</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="prova" onclick="redirectEtapas(this)">Avaliação</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="financeiro" onclick="redirectEtapas(this)">Conheça seu financeiro</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="ajuste" onclick="redirectEtapas(this)">Ajuste de disciplinas</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="uniasselvi" onclick="redirectEtapas(this)">Como falar com a Uniasselvi</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="trilha-curso" onclick="redirectEtapas(this)">Trilha do curso</a>
+                        </li><br>
+                        <li class="borderLeftRight">
+                            <a data-etapa-target="certificado" onclick="redirectEtapas(this)">Certificação</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="borderLeftRight">
+                    <a href="cronograma.html">Boas-Vindas</a>
+                </li>
+            </ul>
+        </div>
+        <div class="topbar-progress"></div>
+    </nav>
+
+    <main>
+        <!-- BOTÃO LIBRAS -->
+        <!-- <a href="https://vempra.uniasselvi.com.br/libras/" target="_blank" class="acessibilidade"
+            title="Acessibilidade"><img src="img/libras-icon.png" alt="Acessibilidade" /></a> -->
+
+        <section class="banner">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <span class="cursos">CURSOS</span>
+                    <span class="tecnicos">TÉCNICOS</span>
+                    <h1>
+                        BEM-VINDO À EAD
+                        <span class="title-destaque">UNIASSELVI</span>
+                    </h1>
+
+                    <div class="text-content">
+                        <h3>INICIE AGORA A CONQUISTA DO SEU SONHO.</h3>
+                        <p>
+                            Aqui, você vai aprender os principais passos
+                            para se dar bem no seu curso técnico. Venha com a
+                            gente construir o seu futuro!
+                        </p>
+                    </div>
+                </div>
+                <img src="https://conteudos.uniasselvi.com.br/tecnico/img/index/Bem-vindo Tec_4.png" alt="" />
+            </div>
+        </section>
+
+        <div class="text-container">
+            <div class="content">
+                <div class="text">
+                    <h3>INICIE AGORA A CONQUISTA DO SEU SONHO.</h3>
+                    <p>
+                        Aqui você vai aprender os principais passos para se
+                        dar bem no seu curso técnico. Venha com a gente
+                        construir o seu futuro!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="over-container">
+            <!-- BOAS-VINDAS -->
+            <div class="bg-light">
+                <div class="outer-padding">
+                    <section class="quatromeia mensagem reset-margin">
+                        <div class="texto">
+                            <h2>
+                                Que
+                                <span class="bg-amarelo">bom te ver</span>
+                                por aqui!
+                            </h2>
+
+                            <p>
+                                Você escolheu
+                                <b>a melhor instituição de ensino a distância</b>
+                                e nós estamos <b>muito felizes</b> com a sua
+                                escolha!
+                            </p>
+
+                            <p>Aqui, você constrói o seu futuro!</p>
+
+                            <p>
+                                <b>A nossa pró-reitora tem uma mensagem para você!</b>
+                            </p>
+                        </div>
+                        <div class="video">
+                            <div class="video-wrapper">
+                                <iframe class="lazyload" width="1280" height="720"
+                                    data-src="https://www.youtube.com/embed/Y2_WurSZg20"
+                                    allowfullscreen="true">
+                                </iframe>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- ETAPA 1 -->
+            <div class="outer-padding">
+                <section class="quatromeia mensagem reset-margin">
+                    <div class="texto">
+                        <div class="etapa-title">
+                           <span class="etapa-number">1</span>
+                            <h2 data-etapa-name="acesso">
+                                COMO <span class="bg-amarelo">ACESSAR</span>
+                            </h2>
+                        </div>
+                        <p>
+                            Já sabe como acessar seu UNIASSELVI Leo App e o seu AVA? Vamos ensinar a você o passo a passo para acessar com
+                            tranquilidade.
+                        </p>
+                            
+                        <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa1.png" class="img-etapa block" />
+                    </div>
+                    <div class="video">
+                        <div class="video-wrapper">
+                            <iframe class="lazyload" width="1280" height="720"
+                                data-src="https://www.youtube.com/embed/F3sVUwteOko"
+                                allowfullscreen="true">
+                            </iframe>
+                        </div>
+
+                        <div class="group-buttons">
+                            <button class="apple-store"
+                                onclick="redirect('https://apps.apple.com/br/app/uniasselvi-leo-app/id1178957336#?platform=iphone')">
+                                    <img src="https://conteudos.uniasselvi.com.br/tecnico/img/index/apple.svg" class="logo" alt="Apple" />
+                                    <div class="legenda">
+                                        <span>Disponível no</span>
+                                        <p><b>APP STORE</b></p>
+                                    </div>
+                            </button>
+                            <button class="google-play"
+                                onclick="redirect('https://play.google.com/store/apps/details?id=com.uniasselvi.leonardo&hl=pt_BR')">
+                                <img src="https://conteudos.uniasselvi.com.br/tecnico/img/index/google-play.svg" class="logo" alt="Google play" />
+                                <div class="legenda">
+                                    <span>Disponível no</span>
+                                    <p><b>GOOGLE PLAY</b></p>
+                                </div>
+                            </button>
+                            <div class="ava-button">
+                                <button onclick="redirect('https://gioconda.uniasselvi.com.br/')">
+                                    <b>ACESSAR O AVA</b>
+                                </button>
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <!-- ETAPA 2 -->
+            <div class="bg-dark">
+                <div class="outer-padding">
+                    <section class="quatromeia mensagem">
+                        <div class="video">
+                            <div class="etapa-title">
+                                <span class="etapa-number">2</span>
+                                <h2 data-etapa-name="passos">
+                                    PRIMEIROS
+                                    <span class="bg-purple">PASSOS</span>
+                                </h2>
+                            </div>
+                            <p>
+                                Aqui, você vai aprender os principais passos
+                                para iniciar seu curso. Vamos mostrar seu
+                                calendário, a estrutura básica de suas
+                                disciplinas, onde ficam as suas provas e
+                                muito mais!
+                            </p>
+                            <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa2.png" class="img-etapa img-alt" />
+                            <div class="video-wrapper">
+                                <iframe class="lazyload" width="1280" height="720"
+                                    data-src="https://www.youtube.com/embed/VEjMF1j0Leo"
+                                    allowfullscreen="true">
+                                </iframe>
+                            </div>
+                            <div class="guia-button">
+                                <button
+                                    onclick="redirect('https://www.uniasselvi.com.br/extranet/o-2.0/download/arqu_download.php?link=282258')">
+                                    GUIA DO ESTUDANTE
+                                </button>
+                            </div>
+                        </div>
+                        <div class="texto">
+                            <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa2.png" class="img-etapa img-default" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- ETAPA 3 -->
+            <div class="outer-padding">
+                <section class="quatromeia mensagem">
+                    <div class="texto">
+                        <div class="etapa-title">
+                            <span class="etapa-number">3</span>
+                            <h2 data-etapa-name="trilha">
+                                TRILHA DE
+                                <span class="bg-amarelo">APRENDIZAGEM</span>
+                            </h2>
+                        </div>
+                        <p>
+                            A trilha de aprendizagem é uma das suas
+                            ferramentas de estudo mais valiosa. Venha
+                            descobrir onde encontrá-la e como usá-la!
+                        </p>
+                        <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa3.png" class="img-etapa block" />
+                    </div>
+                    <div class="video">
+                        <div class="video-wrapper">
+                            <iframe class="lazyload" width="1280" height="720"
+                                data-src="https://www.youtube.com/embed/zGmBrLGkHQM"
+                                allowfullscreen="true">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- ETAPA 4 -->
+            <div class="bg-light">
+                <div class="outer-padding">
+                    <section class="quatromeia mensagem">
+                        <div class="video">
+                            <div class="etapa-title">
+                                <span class="etapa-number">4</span>
+                                <h2 data-etapa-name="teams">
+                                    UTILIZANDO A PLATAFORMA 
+                                    <span class="bg-amarelo">TEAMS</span>
+                                </h2>
+                            </div>
+                            <p>
+                                Essa plataforma de comunicação vai acompanhá-lo durante seus encontros on-line 
+                                e até mesmo no mercado de trabalho. Venha aprender como acessá-la e conhecer 
+                                todas as suas utilidades nos seus estudos!
+                            </p>
+                            <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa4.png" class="img-etapa img-alt" />
+                            <div class="video-wrapper">
+                                <iframe class="lazyload" width="1280" height="720"
+                                    data-src="https://www.youtube.com/embed/fSbQ6yUvPxI"
+                                    allowfullscreen="true">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="texto">
+                            <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa4.png" class="img-etapa img-default" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- ETAPA 5 -->
+            <div class="outer-padding">
+                <section class="quatromeia mensagem">
+                    <div class="texto order-1">
+                        <div class="etapa-title">
+                            <span class="etapa-number">5</span>
+                            <h2 data-etapa-name="agendamento">
+                                COMO AGENDAR
+                            <span class="bg-amarelo">AVALIAÇÃO</span>
+                            </h2>
+                        </div>
+                        <p>
+                            Já está preparado para agendar sua prova quando chegar 
+                            o momento? Estudantes Flex Curso precisam agendar a 
+                            última prova. Vamos mostrar o passo a passo!
+                        </p>
+                        <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa5.png" class="img-etapa block" />
+                    </div>
+                    <div class="video">
+                        <div class="video-wrapper">
+                            <iframe class="lazyload" width="1280" height="720"
+                                data-src="https://www.youtube.com/embed/uCxZTDMZz40"
+                                allowfullscreen="true">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- ETAPA 6 -->
+            <div class="bg-dark">
+                <div class="outer-padding">
+                    <section class="quatromeia mensagem">
+                        <div class="video">
+                            <div class="etapa-title">
+                                <span class="etapa-number">6</span>
+                                <h2 data-etapa-name="prova">
+                                    <span class="bg-purple">AVALIAÇÃO</span>
+                                </h2>
+                            </div>
+                            <p>
+                                As avaliações são essenciais para sua aprovação 
+                                e para testar seus conhecimentos, aqui você vai 
+                                aprender como funcionarão os processos avaliativos 
+                                do seu curso.
+                            </p>
+                            <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa6.png" class="img-etapa img-alt" />
+                            <div class="video-wrapper">
+                                <iframe class="lazyload" width="1280" height="720"
+                                    data-src="https://www.youtube.com/embed/-XWVf29iwSU"
+                                    allowfullscreen="true">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="texto">
+                            <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa6.png" class="img-etapa img-default" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- ETAPA 7 -->
+            <div class="outer-padding">
+                <section class="quatromeia mensagem">
+                    <div class="texto order-1">
+                        <div class="etapa-title">
+                            <span class="etapa-number">7</span>
+                            <h2 data-etapa-name="financeiro">
+                                CONHEÇA SEU
+                                <span class="bg-amarelo">FINANCEIRO</span>
+                            </h2>
+                        </div>
+                        <p>
+                            Aqui você vai aprender todas as funcionalidades
+                            da aba financeiro. Venha tirar todas as dúvidas
+                            para se organizar com mais facilidade!
+                        </p>
+                        <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa7.png" class="img-etapa block" />
+                    </div>
+                    <div class="video">
+                        <div class="video-wrapper">
+                            <iframe class="lazyload" width="1280" height="720"
+                                data-src="https://www.youtube.com/embed/XHkmr-nD-Ho"
+                                allowfullscreen="true">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- ETAPA 8 -->
+            <div class="bg-light">
+                <div class="outer-padding">
+                    <section class="quatromeia mensagem">
+                        <div class="video">
+                            <div class="etapa-title">
+                                <span class="etapa-number">8</span>
+                                <h2 data-etapa-name="ajuste">
+                                    AJUSTE DE
+                                    <span class="bg-amarelo">DISCIPLINAS</span>
+                                </h2>
+                            </div>
+                            <p>
+                                Vamos ensinar o que são disciplinas de
+                                reposição e como realizar a inclusão e
+                                exclusão delas.
+                            </p>
+                            <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa8.png" class="img-etapa img-alt" />
+                            <div class="video-wrapper">
+                                <iframe class="lazyload" width="1280" height="720"
+                                    data-src="https://www.youtube.com/embed/vNiro8qbKWA"
+                                    allowfullscreen="true">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="texto">
+                            <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa8.png" class="img-etapa img-default" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- ETAPA 9 -->
+            <div class="outer-padding">
+                <section class="quatromeia mensagem">
+                    <div class="texto order-1">
+                        <div class="etapa-title">
+                            <span class="etapa-number">9</span>
+                                <h2 data-etapa-name="uniasselvi">
+                                    COMO FALAR COM A<span class="bg-amarelo">
+                                        UNIASSELVI</span>
+                                </h2>
+                        </div>
+                        <p>
+                            Saiba todos os meios de falar com a gente. Você
+                            aprenderá a solicitar os serviços que forem
+                            necessários e a tirar todas as suas dúvidas
+                            pelos caminhos corretos.
+                        </p>
+                        <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa9.png" class="img-etapa block" />
+                    </div>
+                    <div class="video">
+                        <div class="video-wrapper">
+                            <iframe class="lazyload" width="1280" height="720"
+                                data-src="https://www.youtube.com/embed/eCEz7bOWKvc"
+                                allowfullscreen="true">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- ETAPA 10 -->
+                <div class="bg-dark">
+                    <div class="outer-padding">
+                        <section class="quatromeia mensagem">
+                            <div class="video">
+                                <div class="etapa-title">
+                                    <span class="etapa-number">10</span>
+                                    <h2 data-etapa-name="trilha-curso">
+                                        TRILHA DO 
+                                        <span class="bg-purple">CURSO</span>
+                                    </h2>
+                                </div>
+                                <p>
+                                    Quer saber todos os detalhes sobre seu Curso Técnico? 
+                                    A Trilha de Aprendizagem do curso vai te ajudar a ter 
+                                    ainda mais informações sobre o curso que escolheu para você! 
+                                </p>
+                                <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa10.png" class="img-etapa img-alt" />
+                                <div class="video-wrapper">
+                                    <iframe class="lazyload" width="1280" height="720"
+                                        data-src="https://www.youtube.com/embed/o9Ho1du5Kec"
+                                        allowfullscreen="true">
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="texto">
+                                <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa10.png" class="img-etapa img-default" />
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            <!-- ETAPA 11 -->
+            <div class="outer-padding">
+                <section class="quatromeia mensagem">
+                    <div class="texto order-1">
+                        <div class="etapa-title">
+                            <span class="etapa-number">11</span>
+                                <h2 data-etapa-name="certificado">
+                                    <span class="bg-amarelo">
+                                        CERTIFICAÇÃO</span>
+                                </h2>
+                        </div>
+                        <p>
+                            Sabe como emitir o documento que comprova tudo que realizou? 
+                            Vem aprender com a gente: 
+                        </p>
+                        <img src="https://conteudos.uniasselvi.com.br/tecnico/img/etapas/etapa11.png" class="img-etapa block" />
+                    </div>
+                    <div class="video">
+                        <div class="video-wrapper">
+                            <iframe class="lazyload" width="1280" height="720"
+                                data-src="https://www.youtube.com/embed/LQWj6vUaIcg"
+                                allowfullscreen="true">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+ 
+            <div class="outer-padding">
+                <section class="meiaquatro historia" id="instituicao">
+                    <div class="imagem">
+                        <img class="historia-home" src="https://conteudos.uniasselvi.com.br/tecnico/img/index/Uniasselvi-Roxo.png" alt="" />
+                    </div>
+                    <div class="texto">
+                        <h3 class="ante">Sobre a UNIASSELVI</h3>
+                        <h2>Conheça a nossa história!</h2>
+                        <p>
+                            A UNIASSELVI já está há 23 anos
+                            <b>
+                                impactando a vida de milhares de pessoas,
+                            </b>
+                            por meio de um projeto inovador e com foco nos
+                            princípios de <b>inclusão</b> e
+                            <b>transformação da sociedade</b>.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="outer-padding">
+                <section class="coordenador" id="cronograma">
+                    <div class="imagem">
+                        <img src="https://conteudos.uniasselvi.com.br/tecnico/img/index/Menina-laptop-roxo-2.svg" alt="" />
+                    </div>
+                    <div class="texto">
+                        <h2>
+                            Participe de uma conversa com seu coordenador e
+                            fique por dentro de tudo.
+                        </h2>
+                        <p>
+                            Saiba mais sobre o EAD da UNIASSELVI, explore os detalhes 
+                            do seu curso e todos os recursos disponíveis. Escolha o seu 
+                            curso e conheça o coordenador responsável por ele. <br>
+                            Junte-se a nós e comece sua jornada educacional hoje mesmo!
+                        </p>
+                        
+                        <a class="link-lives-home" href="#cronograma">Confira os horários disponíveis</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div class="over-container">
+        <footer>
+            <div class="wrapper">
+                <div class="logo-redes">
+                    <div class="logo">
+                        <a href="https://portal.uniasselvi.com.br" target="_blank">
+                            <img src="../img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="redes">
+                        <a target="_blank" href="https://www.instagram.com/uniasselvioficial/" rel="noopener"><img
+                                src="../img/instagram.png" alt="" /></a>
+                        <a target="_blank" href="https://www.facebook.com/uniasselvi/" rel="noopener"><img
+                                src="../img/facebook.png" alt="" /></a>
+                        <a target="_blank" href="https://www.youtube.com/user/wwwuniasselvi" rel="noopener"><img
+                                src="../img/youtube.png" alt="" /></a>
+                        <a target="_blank" href="https://twitter.com/UniasselviBR" rel="noopener"><img
+                                src="../img/twitter.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="group">
+                        <a href="index.html">Início</a>
+                    </div>
+                    <div class="group">
+                        <a href="cronograma.html">Boas-vindas</a>
+                    </div>
+                </div>
+                <div class="copy">
+                    <span>UNIASSELVI © Todos os direitos reservados</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+</body>
+
+</html>

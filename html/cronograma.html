@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ? css pre-connects -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://use.typekit.net" />
+        <!-- ? -->
+
+        <!-- analytics aqui -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-MP748JT");
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <!-- meta tags aqui -->
+        <!-- Primary Meta Tags -->
+        <title>UNIASSELVI - Converse com seu coordenador</title>
+        <meta
+            name="title"
+            content="UNIASSELVI - Converse com seu coordenador"
+        />
+        <meta
+            name="description"
+            content="Saiba mais sobre o EAD da UNIASSELVI, conheça os detalhes do seu curso e todos os recursos colocados à sua disposição para ajudar você a se tornar o profissional referência no mercado do futuro. Venha com a gente."
+        />
+        <meta name="theme-color" content="#1d1d1b" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://conteudos.uniasselvi.com.br/ead_uniasselvi/cronograma.html"
+        />
+        <meta
+            property="og:title"
+            content="UNIASSELVI - Converse com seu coordenador"
+        />
+        <meta
+            property="og:description"
+            content="Saiba mais sobre o EAD da UNIASSELVI, conheça os detalhes do seu curso e todos os recursos colocados à sua disposição para ajudar você a se tornar o profissional referência no mercado do futuro. Venha com a gente."
+        />
+        <meta
+            property="og:image"
+            content="https://conteudos.uniasselvi.com.br/ead_uniasselvi/img/thumb.png"
+        />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+            property="twitter:url"
+            content="https://conteudos.uniasselvi.com.br/ead_uniasselvi/cronograma.html"
+        />
+        <meta
+            property="twitter:title"
+            content="Saiba mais sobre o EAD da UNIASSELVI, conheça os detalhes do seu curso e todos os recursos colocados à sua disposição para ajudar você a se tornar o profissional referência no mercado do futuro. Venha com a gente."
+        />
+        <meta
+            property="twitter:description"
+            content="Bem-vindo ao EAD Uniasselvi"
+        />
+        <meta
+            property="twitter:image"
+            content="https://conteudos.uniasselvi.com.br/ead_uniasselvi/img/thumb.png"
+        />
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="../img/favicon.png" />
+
+        <!-- files -->
+
+        <link rel="stylesheet" href="https://use.typekit.net/tdl4wcy.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../css/styles.css" />
+        <script src="../js/index.js" async></script>
+        <script src="../js/cronograma.js" defer></script>
+        <script src="../js/lazysizes.min.js" async></script>
+
+        <!-- slim select -->
+        <script src="../js/slimselect.min.js" async></script>
+        <link rel="stylesheet" href="../css/slimselect.min.css" />
+
+        <style>
+            .slim-select.hidden {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="#content" class="skip-to-content">Pular para o conteúdo ⤵</a>
+
+        <nav class="main-nav">
+            <div class="wrapper">
+                <a
+                    class="a-portal"
+                    href="./index.html"
+                    target="_blank"
+                    rel="noopener"
+                    ><img class="lazyload" src="https://conteudos.uniasselvi.com.br/tecnico/img/logo_branco.svg" alt=""
+                /></a>
+
+                <button class="hidden-on-desktop" onclick="toggleMenu()">
+                    <i class="material-icons">menu</i>
+                </button>
+
+                <ul>
+                    <li class="borderLeftRight menu-inicio">
+                        <a href="index.html">Início</a>
+                        <!-- <ul>
+						<li class="borderLeftRight">
+							<a data-etapa-target="acesso" onclick="redirectEtapas(this)">Como Acessar</a>
+						</li>
+						<li class="borderLeftRight">
+							<a data-etapa-target="passos" onclick="redirectEtapas(this)">Primeiros Passos</a>
+						</li>
+						<li class="borderLeftRight">
+							<a data-etapa-target="trilha" onclick="redirectEtapas(this)">Trilha de Aprendizagem</a>
+						</li>
+						<li class="borderLeftRight">
+							<a data-etapa-target="oferta" onclick="redirectEtapas(this)">Tipos de Oferta</a>
+						</li>
+						<li class="borderLeftRight">
+							<a data-etapa-target="teams" onclick="redirectEtapas(this)">Utilizando o Teams</a>
+						</li>
+						<li class="borderLeftRight">
+							<a data-etapa-target="prova" onclick="redirectEtapas(this)">Como Agendar Prova</a>
+						</li>
+						<li class="borderLeftRight">
+							<a data-etapa-target="financeiro" onclick="redirectEtapas(this)">Conheça seu Financeiro</a>
+						</li>
+						<li class="borderLeftRight">
+							<a data-etapa-target="ajuste" onclick="redirectEtapas(this)">Ajuste de Disciplina</a>
+						</li>
+						<li class="borderLeftRight">
+							<a data-etapa-target="uniasselvi" onclick="redirectEtapas(this)">Como Falar com a
+								Uniasselvi</a>
+						</li>
+					</ul> -->
+                    </li>
+
+                    <li class="borderLeftRight active">
+                        <a href="cronograma.html">Boas-Vindas</a>
+                    </li>
+
+                    <!-- <li class="borderLeftRight">
+                    <a href="dicas.html">Dicas e Ferramentas
+                        <i class="material-icons mini">expand_more</i></a>
+
+                    <ul>
+                        <li class="borderLeftRight">
+                            <a href="autoestudo.html">Dicas de Estudo</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a href="ava.html">Gioconda AVA</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a href="leo.html">UNIASSELVI Leo App</a>
+                        </li>
+                        <li class="borderLeftRight">
+                            <a href="tv.html">UNIASSELVI Leo App TV</a>
+                        </li>
+                    </ul>
+                </li> -->
+
+                    <!-- <li class="borderLeftRight">
+                    <a href="modelo.html">Modelo de Ensino
+                        <i class="material-icons mini">expand_more</i></a>
+
+                    <ul>
+                        <li class="borderLeftRight">
+                            <a href="encontros.html">Dinâmica de encontros</a>
+                        </li>
+
+                        <li class="borderLeftRight">
+                            <a href="ofertas.html">Modelos de oferta</a>
+                        </li>
+                    </ul>
+                </li> -->
+                </ul>
+            </div>
+            <div class="topbar-progress"></div>
+        </nav>
+
+        <main>
+            <section class="section-bem-ead capa-cronograma">
+                <div class="lettering">
+                    <img class="lazyload" data-src="https://conteudos.uniasselvi.com.br/tecnico/img/teste1_1.png" alt="" />
+                </div>
+
+                <picture>
+                    <img
+                        class="lazyload fundo"
+                        draggable="false"
+                        data-src="https://conteudos.uniasselvi.com.br/tecnico/img/teste2.png"
+                        alt="Bem-vindo ao EAD Uniasselvi"
+                    />
+                </picture>
+            </section>
+
+            <section class="section-content" id="content">
+                <div class="content-texto">
+                    <div class="neo">
+                        <p class="chamada-boas-vindas">
+                            Que bom ter você na
+                            <b><span class="bg-amarelo">UNIASSELVI</span></b
+                            >.<br />Aqui
+                            <b><span class="bg-amarelo">você constrói</span></b>
+                            o seu futuro.
+                        </p>
+                    </div>
+
+                    <p>
+                        Saiba mais sobre o EAD da UNIASSELVI, explore os 
+                        detalhes do seu curso e todos os recursos disponíveis. <br>
+                        Junte-se a nós e comece sua jornada educacional hoje mesmo!
+                    </p>
+
+                    <p>
+                        <b>
+                            Descubra quem é o coordenador do seu curso e fique por dentro de tudo.
+                        </b>
+                    </p>
+
+                    <!-- CAIXA DE SELEÇÃO
+                    <div class="selects">
+                        <select
+                            id="selectModalidade"
+                            class="slim-select"
+                            onchange="initSelect(this.value)"
+                        >
+                            <option value="-1">
+                                Você é aluno de qual modalidade?
+                            </option>
+
+                            <optgroup label="Técnico">
+                                <option value="tecnico_c">
+                                    Sou calouro de um curso técnico
+                                </option>
+                                <option value="tecnico_v">
+                                    Sou veterano de um curso técnico
+                                </option>
+                            </optgroup>
+
+                            <optgroup label="Não aluno">
+                                <option value="none">Não sou aluno</option>
+                            </optgroup>
+                        </select>
+                        <select
+                            name="selectCurso"
+                            id="selectCurso"
+                            class="slim-select hidden"
+                            onchange="updateLista(this.value)"
+                        >
+                            <option value="-1">
+                                Qual curso você está realizando?
+                            </option>
+                        </select>
+                    </div> -->
+
+                    <!-- <a
+						class="herminio"
+						href="https://youtu.be/XeZFFZxhvI0"
+						target="_blank"
+					>
+						<img src="../img/video_w.svg" alt="" />
+						Mensagem do Reitor
+						<img src="../img/herminio.png" class="cabeca" alt="" />
+					</a> -->
+
+                    <div class="lista-links"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <div class="logo-redes">
+                    <div class="logo">
+                        <a
+                            href="https://portal.uniasselvi.com.br"
+                            target="_blank"
+                        >
+                            <img src="../img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="redes">
+                        <a
+                            target="_blank"
+                            href="https://www.instagram.com/uniasselvioficial/"
+                            rel="noopener"
+                            ><img src="../img/instagram.png" alt=""
+                        /></a>
+                        <a
+                            target="_blank"
+                            href="https://www.facebook.com/uniasselvi/"
+                            rel="noopener"
+                            ><img src="../img/facebook.png" alt=""
+                        /></a>
+                        <a
+                            target="_blank"
+                            href="https://www.youtube.com/user/wwwuniasselvi"
+                            rel="noopener"
+                            ><img src="../img/youtube.png" alt=""
+                        /></a>
+                        <a
+                            target="_blank"
+                            href="https://twitter.com/UniasselviBR"
+                            rel="noopener"
+                            ><img src="../img/twitter.png" alt=""
+                        /></a>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="group">
+                        <a href="index.html">Início</a>
+                    </div>
+                    <div class="group">
+                        <a href="cronograma.html">Boas-vindas</a>
+                    </div>
+                    <!-- <div class="group">
+				<a href="dicas.html">Dicas e Ferramentas</a>
+				<a href="ava.html">Gioconda AVA</a>
+				<a href="leo.html">UNIASSELVI Leo App</a>
+				<a href="tv.html">UNIASSELVI Leo App TV</a>
+			</div> -->
+                    <!-- <div class="group">
+				<a href="modelo.html">Modelo de Ensino</a>
+				<a href="encontros.html">Dinâmica de Encontros</a>
+			</div> -->
+                </div>
+                <div class="copy">
+                    <span>UNIASSELVI © Todos os direitos reservados</span>
+                </div>
+            </div>
+        </footer>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget("https://vlibras.gov.br/app");
+        </script>
+    </body>
+</html>
