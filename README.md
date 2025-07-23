@@ -6,8 +6,8 @@ Este projeto contém uma cópia completa e funcional do site da UNIASSELVI para 
 
 ```
 📦 test/
-├── 📂 html/           # Páginas HTML
-│   ├── index.html     # Página principal
+├── � index.html      # Página principal (raiz)
+├── 📂 html/           # Páginas HTML secundárias
 │   ├── cronograma.html # Página de boas-vindas
 │   └── instituicao.html # Página sobre a UNIASSELVI (sem navegação)
 ├── 📂 css/            # Arquivos de estilo
@@ -36,15 +36,16 @@ Este projeto contém uma cópia completa e funcional do site da UNIASSELVI para 
 
 ## 🌐 Páginas Disponíveis
 
-### 1. **index.html** - Página Principal
+### 1. **index.html** - Página Principal (Raiz)
 
 - Banner de boas-vindas
 - 11 etapas do curso técnico com vídeos
 - Seção sobre a instituição
 - Links para apps iOS/Android
 - Integração com VLibras para acessibilidade
+- **Localização**: Na raiz do projeto para acesso direto
 
-### 2. **cronograma.html** - Boas-Vindas
+### 2. **html/cronograma.html** - Boas-Vindas
 
 - Página de apresentação
 - Informações sobre coordenadores
